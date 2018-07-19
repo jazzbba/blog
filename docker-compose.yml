@@ -1,5 +1,8 @@
 version: '3.4'
 
+volumes:
+  gem_path:
+
 services:
   jekyll:
     image: jekyll/jekyll:stable
@@ -7,6 +10,7 @@ services:
     volumes:
       - ./docs:/srv/jekyll/site
       - ./_site:/srv/jekyll/_site
+      - gem_path:/usr/gem
     ports:
       - "80:4000"
     command: jekyll serve --source site

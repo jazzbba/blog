@@ -1,0 +1,1 @@
+docker-compose -f docker-compose.yml run --rm jekyll bash -c 'cd site && gem install -g'
