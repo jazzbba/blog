@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  jekyll:
+    image: jekyll/jekyll:stable
+    container_name: jekyll_jazzbba
+    volumes:
+      - ./docs:/srv/jekyll/site
+      - ./_site:/srv/jekyll/_site
+    ports:
+      - "80:4000"
+    command: jekyll serve --source site
