@@ -1,11 +1,9 @@
-GEM
-  remote: https://api.rubygems.org/
+PATH
+  remote: .
   specs:
-    jekyll-paginate (1.1.0)
     jekyll-theme-type (1.1)
       jekyll (~> 3.4)
       jekyll-paginate (~> 1.1)
-    rake (10.5.0)
 
 GEM
   remote: https://rubygems.org/
@@ -23,7 +21,7 @@ GEM
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
-    jekyll (3.7.3)
+    jekyll (3.8.3)
       addressable (~> 2.4)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -36,6 +34,7 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
+    jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-watch (2.0.0)
@@ -50,13 +49,14 @@ GEM
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
     public_suffix (3.0.2)
+    rake (10.5.0)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    rouge (3.1.1)
+    rouge (3.2.0)
     ruby_dep (1.5.0)
     safe_yaml (1.0.4)
-    sass (3.5.6)
+    sass (3.5.7)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -67,7 +67,8 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.12)
-  jekyll (~> 3.4)
-  jekyll-paginate (~> 1.1)
   jekyll-theme-type!
   rake (~> 10.0)
+
+BUNDLED WITH
+   1.16.3
